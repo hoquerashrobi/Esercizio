@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   extractedNumber: number;
   arrayNumbers: number[];
 
@@ -19,10 +19,10 @@ export class AppComponent {
 
   estrai(numeroString: HTMLInputElement): void {
     let numeroInt = Number(numeroString.value);
-    
+
     if (numeroInt !== this.extractedNumber && !isNaN(numeroInt)) {
       this.extractedNumber = numeroInt;
-      this.arrayNumbers.push(numeroInt); 
+      this.arrayNumbers.push(numeroInt);
     }
   }
 }
